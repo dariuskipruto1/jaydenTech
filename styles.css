@@ -1,4 +1,6 @@
-/* General Styles */
+/* ==========================
+   GLOBAL STYLES
+========================== */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -11,7 +13,9 @@ h1, h2, h3 {
   margin: 0 0 15px;
 }
 
-/* Header */
+/* ==========================
+   HEADER
+========================== */
 header {
   background: #002b5c;
   color: #fff;
@@ -21,18 +25,38 @@ header {
   align-items: center;
 }
 
-nav a {
-  color: #fff;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: 600;
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
-nav a.active {
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #00c6ff;
+}
+
+.nav-menu a.active {
   border-bottom: 2px solid #fff;
 }
 
-/* Hero Section */
+/* Mobile Toggle */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 28px;
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
 .hero {
   background: linear-gradient(to right, #004080, #0066cc);
   color: #fff;
@@ -55,7 +79,9 @@ nav a.active {
   background: #e6f2ff;
 }
 
-/* Services */
+/* ==========================
+   SERVICES
+========================== */
 .services {
   padding: 60px 20px;
   text-align: center;
@@ -77,7 +103,9 @@ nav a.active {
   transform: translateY(-5px);
 }
 
-/* Pricing */
+/* ==========================
+   PRICING
+========================== */
 .pricing {
   padding: 60px 20px;
   text-align: center;
@@ -131,7 +159,9 @@ nav a.active {
   transform: scale(1.05);
 }
 
-/* Ratings */
+/* ==========================
+   RATINGS
+========================== */
 .ratings {
   background: #e6f2ff;
   padding: 60px 20px;
@@ -143,7 +173,9 @@ nav a.active {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* FAQ */
+/* ==========================
+   FAQ
+========================== */
 .faq {
   padding: 60px 20px;
   background: #fff;
@@ -170,8 +202,6 @@ nav a.active {
   margin: 0 0 20px;
   line-height: 1.6;
 }
-
-/* Contact */
 .contact {
   padding: 60px 20px;
   text-align: center;
@@ -199,38 +229,40 @@ nav a.active {
   background: #0066cc;
 }
 
-/* Footer */
+/* ==========================
+   FOOTER
+========================== */
 footer {
   background: #002b5c;
   color: #fff;
   text-align: center;
   padding: 20px;
 }
-@media(max-width:768px){
-    nav{
-        display: none;
-    }
-    .menu-toggle{
-        display: block;
-        background: #004080;
-        color: #fff;;
-        padding: 10px;
-        cursor: pointer;
-        text-align: center;
-    }
-    .mobile-nav{
-        display: none;
-        flex-direction: column;
-        background: #002b5c;
-        text-align: center;
-    }
-    .mobile-nav a{
-        color: #fff;
-        padding: 10px;
-        text-decoration:none ;
-        border-bottom: 1px solid #004080;
-    }
-    .mobile-nav.show{
-        display: flex;
-    }
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+@media (max-width:768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    background: #002b5c;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: #004080;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
 }

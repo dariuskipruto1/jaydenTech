@@ -66,7 +66,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-
 /* ==========================
    NAVIGATION
 ========================== */
@@ -85,6 +84,19 @@ body {
 
 .nav-menu li a:hover {
   color: #00c6ff;
+}
+
+.nav-menu a.active {
+  color: #00c6ff;
+  font-weight: 700;
+}
+
+/* Mobile Toggle */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 28px;
 }
 
 /* ==========================
@@ -165,7 +177,6 @@ body {
   transform: translateY(-8px);
   box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
-
 
 /* ==========================
    ABOUT
@@ -296,33 +307,32 @@ footer {
   }
 
   .nav-menu {
+    display: none;
     flex-direction: column;
     align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    background: #002b5c;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
   }
 
   .hero h2 {
     font-size: 1.8rem;
   }
 }
-/* Mobile Menu */
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: white;
-}
 
-.nav-menu.active {
-  display: flex;
-}
-
-/* Active nav link */
-.nav-menu a.active {
-  color: #00c6ff;
-  font-weight: 700;
-}
-
-/* Scroll to top button */
+/* ==========================
+   SCROLL TO TOP BUTTON
+========================== */
 .scroll-top {
   position: fixed;
   bottom: 30px;
@@ -340,47 +350,4 @@ footer {
 
 .scroll-top:hover {
   background: #111;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 15px;
-  }
-}
-
-@media(max-width:768px){
-    nav{
-        display: none;
-    }
-    .menu-toggle{
-        display: block;
-        background: #004080;
-        color: #fff;;
-        padding: 10px;
-        cursor: pointer;
-        text-align: center;
-    }
-    .mobile-nav{
-        display: none;
-        flex-direction: column;
-        background: #002b5c;
-        text-align: center;
-    }
-    .mobile-nav a{
-        color: #fff;
-        padding: 10px;
-        text-decoration:none ;
-        border-bottom: 1px solid #004080;
-    }
-    .mobile-nav.show{
-        display: flex;
-    }
 }
