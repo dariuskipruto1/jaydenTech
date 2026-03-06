@@ -620,13 +620,13 @@ footer {
 }
 body.dark {
   background-color: #1a1a1a;
-  color: #f4f4f4;
+  color: gold;
 }
 
 body.dark .header { background: #000;}
 body.dark .service-card, body.dark .pricing-card, body.dark .team-member {
   background: #2d2d2d;
-  color: #fff;
+  color: gold;
 }
 body.dark .about, body.dark .pricing, body.dark .team {
   background: #121212;
