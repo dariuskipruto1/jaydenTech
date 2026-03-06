@@ -206,3 +206,31 @@ footer {
   text-align: center;
   padding: 20px;
 }
+@media(max-width:768px){
+    nav{
+        display: none;
+    }
+    .menu-toggle{
+        display: block;
+        background: #004080;
+        color: #fff;;
+        padding: 10px;
+        cursor: pointer;
+        text-align: center;
+    }
+    .mobile-nav{
+        display: none;
+        flex-direction: column;
+        background: #002b5c;
+        text-align: center;
+    }
+    .mobile-nav a{
+        color: #fff;
+        padding: 10px;
+        text-decoration:none ;
+        border-bottom: 1px solid #004080;
+    }
+    .mobile-nav.show{
+        display: flex;
+    }
+}
