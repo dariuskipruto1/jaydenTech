@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin: 0 0 15px;
+}
+
+/* Header */
+header {
+  background: #002b5c;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a.active {
+  border-bottom: 2px solid #fff;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #004080, #0066cc);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #fff;
+  color: #004080;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #e6f2ff;
+}
+
+/* Services */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 25px;
+  width: 280px;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Pricing */
+.pricing {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pricing-card {
+  background: #fff;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 25px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+.pricing-card h3 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pricing-card ul li {
+  margin: 10px 0;
+}
+
+.featured {
+  border: 2px solid #004080;
+  transform: scale(1.05);
+}
+
+/* Ratings */
+.ratings {
+  background: #e6f2ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.ratings iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* FAQ */
+.faq {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.faq h2 {
+  color: #004080;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.faq-item h3 {
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  margin: 0 0 20px;
+  line-height: 1.6;
+}
+
+/* Contact */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact form input, 
+.contact form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact form button {
+  background: #004080;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact form button:hover {
+  background: #0066cc;
+}
+
+/* Footer */
+footer {
+  background: #002b5c;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
