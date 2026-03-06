@@ -23,8 +23,6 @@
 <body>
   <header class="header">
   <div class="container header-container">
-
-    <!-- Logo -->
     <div class="logo">
       <video autoplay muted loop playsinline class="logo-video">
         <source src="jayden.mp4" type="video/webm">
@@ -32,7 +30,6 @@
       <h1>Jayden’s Tech Solutions</h1>
     </div>
 
-    <!-- Navigation -->
     <nav>
       <ul class="nav-menu" id="navMenu">
         <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
@@ -42,16 +39,13 @@
       </ul>
     </nav>
 
-    <!-- Mobile Menu Toggle -->
     <div class="menu-toggle" onclick="toggleMenu()">
-      <span class="material-icons">menu</span>
+      <span class="fa fa-bars"></span>
     </div>
-
   </div>
 </header>
 
-
-<!-- ================= HERO ================= -->
+<div class="overlay" id="overlay"></div>
 <section id="home" class="hero">
   <div class="container">
     <h2>Innovating IT for a Smarter Future</h2>
@@ -59,8 +53,6 @@
     <a href="contact.html" class="btn-primary">Get Started</a>
   </div>
 </section>
-
-<!-- ================= SERVICES ================= -->
 <section id="services" class="services">
   <div class="container">
     <h2>Our Services</h2>
@@ -89,7 +81,6 @@
   </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
 <section id="about" class="about">
   <div class="container">
     <h2>About Us</h2>
@@ -146,31 +137,28 @@
         <p>Or reach us on:</p>
         <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
         <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-        <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="https://wa.me/+254741182283" target="_blank">
+  <i class="fab fa-whatsapp"></i> WhatsApp
+</a>
+
       </div>
 
     </form>
   </div>
 </section>
 
-<!-- ================= CTA ================= -->
 <section class="cta">
   <div class="container">
     <h2>Ready to Transform Your Business?</h2>
     <a href="contact.html" class="btn-primary">Contact Us Today</a>
   </div>
 </section>
-<!-- ================= FOOTER ================= -->
+
 <footer>
   <div class="container">
     <p>&copy; 2026 Jayden’s Tech Solutions. All rights reserved.</p>
   </div>
 </footer>
 <script src="script.js"></script>
-  <script>
-    function toggleMenu(){
-        document.getElementById("mobileNav").classList.toggle('show');
-    }
-  </script>
 </body>
 </html>
