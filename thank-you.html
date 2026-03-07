@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You - Jayden Tech Solutions</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #4CAF50, #2E7D32);
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+      margin: 0;
+    }
+    .thankyou-container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    a {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #fff;
+      color: #2E7D32;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background 0.3s, color 0.3s;
+    }
+    a:hover {
+      background: #2E7D32;
+      color: #fff;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .icon {
+      font-size: 3em;
+      margin-bottom: 15px;
+      color: #FFD700;
+    }
+  </style>
+</head>
+<body>
+  <div class="thankyou-container">
+    <!-- Font Awesome icon -->
+    <i class="fa-solid fa-check-circle icon"></i>
+
+    <!-- Google Material Icon -->
+    <span class="material-icons icon">emoji_events</span>
+
+    <h1 id="thankYouMessage">Thank You!</h1>
+    <p>Your message has been sent successfully.<br>We’ll get back to you soon.</p>
+    <a href="index.html"><i class="fa-solid fa-home"></i> Return to Homepage</a>
+  </div>
+  <script>
+    // Optional: Add any JavaScript for interactivity or animations here
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('name');
+    if (name) {
+        document.querySelector('thankYouMessage').textContent = `Thank you for contacting Jayden Tech Solutions, ${name}! We’ll get back to you soon.`;
+    }
+  </script>
+</body>
+</html>

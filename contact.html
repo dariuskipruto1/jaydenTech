@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Jayden’s Tech Solutions</title>
-
-  <meta name="description" content="Jayden’s Tech Solutions provides IT consulting, web development, cybersecurity, and software solutions.">
-  <meta name="keywords" content="IT consulting, web development, cybersecurity, software solutions">
+  <title>Contact Us - Jayden’s Tech Solutions</title>
+  <meta name="description" content="Get in touch with Jayden Tech Solutions. We’re here to help you with your technology needs.">
+  <meta name="keywords" content="Contact Jayden Tech Solutions, Jayden Darius Kipruto, IT services Kenya, company profile">
   <meta name="author" content="Jayden Darius Kipruto">
+  <meta property="og:title" content="Contact Us - Jayden Tech Solutions">
+  <meta property="og:description" content="Get in touch with Jayden Tech Solutions. We’re here to help you with your technology needs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dariuskipruto1.github.io/jayden/contact.html">
+  <meta property="og:image" content="https://dariuskipruto1.github.io/jayden/image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Us - Jayden Tech Solutions">
+  <meta name="twitter:description" content="Get in touch with Jayden Tech Solutions. We’re here to help you with your technology needs.">
+  <meta name="twitter:image" content="https://dariuskipruto1.github.io/jayden/image.png">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="jaytech.png">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="jaytech.png">
 </head>
+
 <body> <header class="header">
   <div class="container header-container">
     <div class="logo">
@@ -49,13 +51,19 @@
   </section>
   <section class="contact-form">
     <h2>Send Us a Message</h2>
-    <link rel="stylesheet" href="https://tinyurl.com/jaydenTech">
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <input type="text" placeholder="Subject" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+    <form action="https://formspree.io/f/mqeyazaq" method="POST" class="contact-form">
+      <label for="name"><i class="fa fa-user"></i> Your Name</label>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <label for="email"><i class="fa fa-envelope"></i> Your Email</label>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <label for="subject"><i class="fa fa-tag"></i> Subject</label>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <label for="message"><i class="fa fa-comment"></i> Your Message</label>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <input type="hidden" name="_autoresponse" value="Thank you for contacting Jayden Tech Solutions, {{name}}!,We will get back to you as soon as possible.">
+      <input type="hidden" name="_next" value="https://dariuskipruto1.github.io/jayden/thank-you.html?name={{name}}">
+
+      <button type="submit"><i class="fa fa-paper-plane"></i>Send Message</button>
     </form>
   </section>
   <section class="contact-info">
@@ -65,7 +73,7 @@
     <p><strong>Phone:</strong> +254 741182283</p>
   </section>
   <footer>
-    <p>&copy; 2026 Jayden Tech Solutions. Designed with care in Kenya.</p>
+    <p>&copy; 2026 Jayden Tech Solutions. Designed with care in Kenya.Founded by Jayden Darius Kipruto</p>
   </footer>
   <script src="script.js"></script>
 </body>
