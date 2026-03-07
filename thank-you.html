@@ -75,13 +75,14 @@
     <p>Your message has been sent successfully.<br>We’ll get back to you soon.</p>
     <a href="index.html"><i class="fa-solid fa-home"></i> Return to Homepage</a>
   </div>
-  <script>
-    // Optional: Add any JavaScript for interactivity or animations here
-    const params = new URLSearchParams(window.location.search);
-    const name = params.get('name');
-    if (name) {
-        document.querySelector('thankYouMessage').textContent = `Thank you for contacting Jayden Tech Solutions, ${name}! We’ll get back to you soon.`;
-    }
-  </script>
+ <script>
+  const params = new URLSearchParams(window.location.search);
+  const name = params.get('name');
+  if (name) {
+    document.getElementById('thankYouMessage').textContent =
+      `Thank you for contacting Jayden Tech Solutions, ${name}! We’ll get back to you soon.`;
+  }
+</script>
+
 </body>
 </html>
