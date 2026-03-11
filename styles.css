@@ -237,9 +237,11 @@ h1, h2, h3 {
   transform: scale(1.05);
 }
 .ratings {
-  background: #e6f2ff;
+  background: #e4ebf2;
   padding: 60px 20px;
   text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .ratings iframe {
@@ -603,6 +605,52 @@ footer {
   .contact-info {
     padding: 40px 15px;
   }
+  .ratings {
+  background: #242729;
+  padding: 60px 20px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.contact-info {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.contact-info h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.socialMedia a {
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.socialMedia a i {
+  margin-right: 5px;
+}
+
+.socialMedia a:hover {
+  color: #0077b5;
+}
+
+
+.ratings iframe {
+  border-radius: 10px;
+  box-shadow:   4px 4px 10px rgba(0,0,0,0.1);
+  min-width: 100%;
+  width: 100%;
+  z-index: 1;
+
+}
+.ratings iframe :hover{
+  box-shadow: darkblue 5px 3px 10px;
 }
 
 @media (max-width: 480px) {
@@ -667,4 +715,58 @@ body.dark .service-card, body.dark .pricing-card, body.dark .about-list li {
   color:gold;
 }
 .hidden { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
-.show { opacity: 1; transform: translateY(0); }
+.show { opacity: 1; transform: translateY(0); 
+}.contact-info {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.contact-info h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.contact-info {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.contact-info h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.socialMedia {
+  display: flex;       
+  gap: 20px;           
+}
+
+.socialMedia a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007BFF; 
+}
+
+.socialMedia a i {
+  margin-right: 5px;
+}
+
+/* Hover effects with brand colors */
+.socialMedia a[href*="wa.me"]:hover {
+  color: #25D366; /
+
+.socialMedia a[href*="linkedin"]:hover {
+  color: #0077b5;
+}
+
+.socialMedia a[href*="x.com"]:hover {
+  color: #1DA1F2;
+}
